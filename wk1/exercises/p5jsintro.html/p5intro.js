@@ -1,8 +1,13 @@
 function setup () {
-    createCanvas(400, 400); 
+    createCanvas(1210, 650); 
 }
 
 function draw(){
-    background(220);
-    ellipse(50,50,80,80);
+   if (mouseIsPressed) {
+       fill(128, 0, 128);
+   }else {
+       fill(300);
+   }
+   rect(mouseX, mouseY, 80, 80);
+   stroke(268, 118, 200, 200);
 }
