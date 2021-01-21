@@ -1,0 +1,11 @@
+
+html{
+    --purple: #8116be;  
+    --white: #ffffff; 
+}
+
+body {
+    background-color: var(--purple);
+    color: var(--white);
+    font-size: 25px;
+}
