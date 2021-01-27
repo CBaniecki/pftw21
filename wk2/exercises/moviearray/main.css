@@ -1,0 +1,10 @@
+html{
+    --blue: #004dc0bd;
+    --white: #ffffff;
+}
+
+body{
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 60px;
+}
