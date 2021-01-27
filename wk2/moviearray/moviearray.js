@@ -4,3 +4,5 @@ console.log(myArray);
 const movie = window.prompt('what is your favorite movie?');
 
 myArray.push(movie);
+
+console.log(myArray.toString());
