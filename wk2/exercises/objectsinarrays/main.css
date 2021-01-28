@@ -1,0 +1,15 @@
+html{
+    --darkpurple: #420099a1;
+    --white: #ffffff;
+}
+body{
+    background-color: var(--darkpurple);
+}
+
+h3{
+    color: white;
+    font-size: 80px;
+    padding-top: 300px;
+    padding-left: 250px;
+}
+
