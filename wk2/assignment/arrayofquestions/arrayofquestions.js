@@ -4,11 +4,12 @@ const  triviaQuestion = [
     {question: 'where is Yosemite National Park located?', answer :'California'}
 ];
 
-const firstQuestion = prompt(triviaQuestion[0].question); {
-alert('You answered ' + firstQuestion + ' the correct answer was ' + triviaQuestion[0].answer );
+const randomIdx = Math.round(Math.random() * triviaQuestion.length -1);
+
+firstQuestion = prompt(triviaQuestion[randomIdx].question); {
+alert('You answered ' + firstQuestion + ' the correct answer was ' + triviaQuestion[randomIdx].answer);
 }
 
 const arrayOfQuestions = triviaQuestion.concat(firstQuestion);
-console.log(arrayOfQuestions); 
-
+console.log(arrayOfQuestions);
 
