@@ -3,7 +3,7 @@ const  triviaQuestion = [
     {question: 'What city in France is the Eiffel Tower located in?', answer:'Paris'},
     {question: 'Where is Yosemite National Park located?', answer :'California'},
     {question: 'What was the first Pixar movie?', answer: 'Toy Story'},
-    {question: 'What is the bunny rabbita name in Bambi?', answer: 'Thumper'}
+    {question: 'What is the bunny rabbits name in Bambi?', answer: 'Thumper'}
 ];
 
 const randomIdx = Math.round(Math.random() * triviaQuestion.length -1);
