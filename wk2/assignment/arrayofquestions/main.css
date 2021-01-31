@@ -1,0 +1,16 @@
+
+html{
+    --purple: #9e93ff;
+    --white: #ffffff;
+
+}
+
+body{
+    background: var(--purple);
+}
+
+
+h2{
+    font-size: 180px;
+    color: var(--white);
+}
