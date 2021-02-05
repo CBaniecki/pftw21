@@ -35,7 +35,6 @@ function createTile() {
 
 function draw(){
     createTile();
+    noLoop();
 }
 
-//no loop
-noLoop();
