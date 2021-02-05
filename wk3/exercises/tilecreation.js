@@ -29,13 +29,13 @@ function createTile() {
     //rect(150, 0, 4, 200);
     rect(130, 0, 8, 200);
     rect(0, 40, 200, 8);
-    //line(20,10, 50, 40);
-
-    
-      
+    //line(20,10, 50, 40);     
 
 };
 
 function draw(){
     createTile();
 }
+
+//no loop
+noLoop();
