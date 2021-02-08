@@ -62,8 +62,8 @@ currentQuestion = next();
 let message = currentQuestion.question;
 
 function setup() {
- createCanvas(1670, 870);
- heading = createElement('h1', ['Disney Trivia Quiz']);
+ createCanvas(630, 470);
+ heading = createElement('h1', ['Disney and Pixar Trivia Quiz']);
  heading.position(100, 100);
  questionInput = createInput('');
  questionInput.size(300, 40);
@@ -75,7 +75,7 @@ function setup() {
 }
 
 function draw() {
- //background('lightblue');
+ background('lightblue');
  fill('white');
  textSize(24);
  text(message, 100, 200);
@@ -84,7 +84,7 @@ function draw() {
 }
 
 function backgroundImg(imgNumber) {
-var myImages = ["images/DisneyBackground.jpg", "images/disneycastle.jpeg"];
+var myImages = ["images/DisneyBackground.jpg", "images/disneycastle.jpeg", "images/pixarcharacters.jpg"];
 var image= document.body.style.backgroundImage;
 var newImg = Math.floor(Math.random()* myImages.length);
 document.body.style.backgroundImage = 'url('+myImages[newImg]+')';
