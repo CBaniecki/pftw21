@@ -5,7 +5,7 @@ let myRects = [];
 let startingId = 0;
 function setup () {
     createCanvas(1000, 500);
-    background(0);
+    background('#fceeda');
     //ellipse(circleX, circleY, circleDiameter);
     for (let k = 0; k < 2; k ++){
         for (let i = 0; i < 5; i++) {
