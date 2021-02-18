@@ -1,18 +1,18 @@
 // TIMERS are COOL
 let blockX = 0;
 let blockY = 0;
-let blockColor = '#cd00cd';
+let blockColor = 255;
 let drawTimer;
 const speed = 7;
 const distance = 2;
 
 function setup () {
     createCanvas(500, 500);
-    background(209);
+    background('#800080');
 }
 
 function drawBlock(x, y, color) {
-    fill(color || '#800080');
+    fill(color || 255);
     rect(x, y, 50, 50);
 
 }
@@ -21,7 +21,7 @@ function keyTyped(){
     if (isNaN(keyToNumber)){
         return;
     }
-    keyToNumber = map(keyToNumber, 1, 9, '#cd00cd' , '#cd00cd');
+    keyToNumber = map(keyToNumber, 1, 9, 1 , 255);
     console.log('converted number', keyToNumber);
     blockColor = keyToNumber;
 }
