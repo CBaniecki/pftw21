@@ -1,25 +1,32 @@
-let bubble1;
-let bubble2;
 
+let bubbleArray = [];
 function setup() {
     createCanvas(600, 400);
-    bubble1= new Bubble();
-    bubble2= new Bubble();
+    for(let i = 0; i < 6; i++) {
+    const bubble= new Bubble(200, 150, 24);
+    bubbleArray.push(bubble);
+    //x += 120;
+    }      
 }
 
 function draw(){
     background('#30D5C8');
-    bubble1.move();
-    bubble1.show();
-    bubble2.move();
-    bubble2.show();
+    for (let k = 0; k < 2; k++) {
+    bubbleArray[k].move();
+    bubbleArray[k].show();
+    }
+  
 }
 
 
 class Bubble{
-    constructor() {
-        this.x= 200;
-        this.y= 150;
+    constructor(x, y, r) {
+        this.x= x;
+        this.y= y;
+        this.width= r;
+        this.height= r;
+        //this.move();
+        //this.show();
     }
 
     move() {
@@ -31,6 +38,6 @@ class Bubble{
         stroke('#654321');
         strokeWeight(4);
         noFill();
-        ellipse(this.x, this.y, 24, 24);
+        ellipse(this.x, this.y, this.width);
     }
 }
