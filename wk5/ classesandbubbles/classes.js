@@ -3,7 +3,7 @@ let bubbleArray = [];
 function setup() {
     createCanvas(600, 400);
     for(let i = 0; i < 6; i++) {
-    const bubble= new Bubble(200, 150, 24);
+    const bubble= new Bubble(200, 150, 50);
     bubbleArray.push(bubble);
     //x += 120;
     }      
@@ -11,7 +11,7 @@ function setup() {
 
 function draw(){
     background('#30D5C8');
-    for (let k = 0; k < 2; k++) {
+    for (let k = 0; k < 3; k++) {
     bubbleArray[k].move();
     bubbleArray[k].show();
     }
@@ -31,7 +31,7 @@ class Bubble{
 
     move() {
         this.x = this.x + random(-5, 5);
-        this.y = this.y + random(-5, 5);
+        this.y = this.y + random(-3, 3);
     }
 
     show() {
