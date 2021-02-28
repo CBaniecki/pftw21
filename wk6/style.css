@@ -1,0 +1,19 @@
+html{
+    --light-blue: #0955acb7;
+    --white: #ffffff;
+}
+
+body{
+    background-color: var(--light-blue);
+    color: var(--white);
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 4em;
+    margin-left: 20em;
+
+
+}
+
+ul li{
+    list-style-type: none;
+}
