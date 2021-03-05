@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison using Vue</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div id ="compareVue" v-cloak>
+      <h2> {{message}}</h2>
+
+      <nav>
+        <ul>
+            <li v-bind:style="baseStyle"><a href="#">Llamas</a></li>
+            <li v-bind:class="{active: currentRoute==='home'}"><a href="#">Alpacas</a></li>
+        </ul>
+     </nav>
+
+    </div>
+
+
+
+    <div id="alpacaFacts" v-cloak>
+        <p>{{message}}</p>
+    </div>
+
+    <div id="llamaFacts" v-cloak>
+        <p>{{message}}</p>
+    </div>
+
+    <div id="llamaLink" v-cloak>
+        <a v-bind:href="link">Link to learn more about Llamas</a>
+    </div>
+
+    <div id="alpacaLink" v-cloak>
+        <a v-bind:href="link">Link to learn more about Alpacas</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
