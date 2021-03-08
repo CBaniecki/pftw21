@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show and Tell Collection</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>Camera Collection</h1>
+    <div id="demo" v-cloak>
+    
+    <div class= "container">
+
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Year</th>
+            <th>Film</th>
+        </thead>
+        <tbody>
+            <tr v-for="(camera, index) in cameras" v-bind:class="{even: (index + 1)% 2 ===0}">
+            <td>{{camera.name}}</td>
+            <td>{{camera.type}}</td>
+            <td>{{camera.year}}</td>
+            <td>{{camera.film}}</td>
+            </tr>
+        </tbody>
+    
+    </table>
+    </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+   <script src="script.js"></script>
+</body>
+</html>
