@@ -1,0 +1,38 @@
+form{
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+div{
+    margin: 10px 0;
+    display: flex;
+}
+
+div.alpaca-status, div.alpaca-color, div.output{
+    flex-direction: column;
+}
+
+div label{
+    margin-right: 10px;
+}
+div input, div select{
+    flex-grow: 1;
+}
+
+ul{
+    list-style-type: none;
+    margin:0;
+}
+
+li{
+    margin: 5px 0;
+}
+
+body{
+    background-color: lightskyblue;
+}
+
+form{
+    background-color: white;
+}
