@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <h1>Forms: Dynamic data</h1>
+    <div id="formDemo">
+        <fieldset>
+            <legend>Personal interests</legend>
+            <div class= "checkbox-form-group">
+                <p>Are you an alien from outer-space</p>
+                <label for="alien">Yes</label>
+                <input type="checkbox" v-model="alien" true-value="yes" false-value="no"/>
+            </div>
+
+            <div class="checkbox-form-group">
+                <p>What kinds of pets have you owned</p>
+                <label>Cat<input type="checkbox" value="cat" v-model="pets" /></label>
+                <label>Dog<input type="checkbox" value="dog" v-model="pets" /></label>
+                <label>Llama <input type="checkbox" value="Llama" v-model="pets" /></label>
+                <label>Emu<input type="checkbox" value = "Emu" v-model="pets" /></label>
+                <label>Axoolti<input type="checkbox" value = "Axoolti" v-model="pets"/></label>
+            </div>
+
+                <div clas="radio-form-group">
+                    <p>Which is your favorite type of food</p>
+                    <label>Italian <input type="radio" value="italian" v-model="favFood"/></label>
+                    <label>Korean <input type="radio" value="korean" v-model="favFood"/></label>
+                    <label>Japanese <input type="radio" value="japanese" v-model="favFood"/></label>
+                    <label>American <input type="radio" value="american" v-model="favFood"/></label>
+                </div>
+
+                <div class="form-group">
+                    <label for="direction">You are currently facing: choose the closest one</label>
+                    <select v-model="direction">
+                        <option value="n">North</option>
+                        <option value="s">South</option>
+                        <option value="e">East</option>
+                        <option value="w">West</option>
+
+                    </select>
+                </div>
+
+
+        </fieldset>
+    <div><strong>Output</strong></div>
+    <p>Alien: {{alien}}</p>
+    <p>Pet: {{pets}}</p>
+    <p>Food: {{favFood}}</p>
+    <p>Direction: {{direction}}</p>
+</div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="script.js"></script>
+</body>
+</html>

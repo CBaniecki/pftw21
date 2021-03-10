@@ -1,0 +1,11 @@
+.form-group{
+    margin: 20px 0;
+}
+
+.checkbox .form-group label{
+    display: inline-block;
+}
+
+.form-group label {
+    display: block;
+}
