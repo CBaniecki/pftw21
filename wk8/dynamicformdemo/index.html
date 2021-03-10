@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello! Moar Forms!</h1>
+    <div id="more-forms">
+    <fieldset>
+        <legend>Dynamic Binding</legend>
+        <div class="form-group">
+        <p for="comiccats">Favorite Comic Cats</p>
+        <div class="radio-form-group" v-for="cat in cats">
+            <label> {{cat.name}} <input type="radio" v-model="selectedCat" v-bind:value="cat"/></label>
+        </div>
+    </div> 
+    </fieldset>
+    <div>
+        <h3>Output</h3>
+        <p v-if="selectedCat.name">{{selectedCat.name}} is from the comic {{selectedCat.comic}}</p>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
