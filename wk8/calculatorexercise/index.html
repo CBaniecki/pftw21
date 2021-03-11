@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div id="calcApp">
+        <form>
+            <div class="calculator">
+                <input v-model.number="firstNum" type="number" placeholder="first number">
+                <select v-model="operation">
+                    <option value="add">+</option>
+                    <option value="subtract">-</option>
+                    <option value="multiply">&times;</option>
+                    <option value="divide">&divide;</option>
+                </select>
+                <input v-model.number="secondNum" type="number" placeholder="second number">
+            </div>
+            <button v-on:click="calculate(firstNum, secondNum)" type="button">Calculate</button>
+        </form>
+    <div class="operation">
+        Operation: {{operation}}<br>
+        Total: <strong>{{total}}</strong>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="script.js"></script>
+</body>
+</html>
