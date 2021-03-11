@@ -1,0 +1,39 @@
+form{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(184, 179, 179, 0.945);
+    padding: 10px;
+    border-radius: 1em;
+
+
+}
+
+h1{
+    color: rgb(87, 87, 87);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+div{
+    margin: 10px 0;
+}
+
+div.calculator{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+div.operation{
+    text-align: center;
+    font-family: Arial,sans-serif;
+    color: rgb(87, 87, 87);
+
+}
+
+body{
+    background-color: rgba(195, 243, 250, 0.897);
+}
+
