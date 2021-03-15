@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding to Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Camera Collection</h1>
+    <div id="demo" v-cloak>
+
+    <div class="container">
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Year</th>
+                <th>Film</th>
+                <th>Actions</th>
+            </thead>
+            <tbody>
+                <tr v-for="(camera, index) in cameras" v-bind:class="{even: (index + 1) % 2 ===0}">
+                <td>{{camera.name}}</td>
+                <td>{{camera.type}}</td>
+                <td>{{camera.year}}</td>
+                <td>{{camera.film}}</td>
+                <td><button type="button" v-on:click="deleteItem(camera)">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <form v-on:submit.prevent="submitHandler" class="new-camera-form">
+        <fieldset>
+            <legend>Add a camera to the collection</legend>
+            <div>
+                <label>Name:</label><input id="name" v-model="newCameraObj.name" type="text">
+            </div>
+            <div>
+                <label>Type:</label><input id="type" v-model="newCameraObj.type" type="text">
+            </div>
+            <div>
+                <label>Year:</label><input id="year" v-model="newCameraObj.year" type="text">
+            </div>
+            <div>
+                <label>Film:</label><input id="film" v-model="newCameraObj.film" type="text">
+            </div>
+
+            <button type="submit">Submit</button>
+
+        </fieldset>
+    </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="script.js"></script>
+</body>
+</html>
