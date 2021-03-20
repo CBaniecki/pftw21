@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding to Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Camera Collection</h1>
+    <div id="demo" v-cloak>
+        
+        <div class="container">
+            <table>
+                <thead>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Year</th>
+                    <th>Film</th>
+                </thead>
+                <tbody>
+                    <tr is="camera-component" v-for="(camera, index) in cameras"  v-bind:name="camera.name" v-bind:type="camera.type" v-bind:year="camera.year" v-bind:film="camera.film">
+                    
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="script.js"></script>
+</body>
+</html>
