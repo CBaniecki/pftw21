@@ -1,9 +1,9 @@
 
 Vue.component('camera-component', {
-    template: '<div> <p> Name {{name}} <br> \
-               Type {{type}} <br> \
-               Year {{year}}<br>\
-               Film {{film}} \
+    template: '<div> <p> Name: {{name}} <br> \
+               Type: {{type}} <br> \
+               Year: {{year}}<br>\
+               Film: {{film}} \
             </p> \
             </div>',   
             
