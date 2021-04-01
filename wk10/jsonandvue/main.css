@@ -1,0 +1,45 @@
+html {
+    font-family: Arial, sans-serif;
+}
+
+.track-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.track{
+    width: 144px;
+    border: 3px solid black;
+    background: lightgrey;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.track.no-change {
+    border-color: lightskyblue;
+}
+
+.track.up {
+    border-color: turquoise;
+}
+
+.track.down {
+    border-color: red;
+}
+
+.track h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+.track img {
+    width: 100%;
+    max-width: 53px;
+}
+
