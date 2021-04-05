@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
+    <link rel="stylesheet" href="main.css">
     <title>Displaying Data with Axios</title>
 </head>
 <body>
-    <div id="display">
-       <artwork-departments v-for="collection in results" v-bind:departments="collection"></artwork-departments>
+    <div class="header-background">
+    <h1>The Metropolitan Museum of Art Departments</h1>
+    </div>
+        <img src="image/themet.jpeg">
+
+    <div id="display" class="art-wrapper">
+       <artwork-departments v-for="department in departments" v-bind:department="department"></artwork-departments>
     </div>
     <script src= "script.js"></script>
 </body>
