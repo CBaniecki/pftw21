@@ -1,0 +1,40 @@
+.art-wrapper{
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    padding: 4rem;
+    margin-left: 20em;
+    margin-right: 20em;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 578px;
+    height: 630px;
+    color:rgb(253, 253, 234);
+}
+
+h1{
+    text-align: center;
+    color: #e7444a;
+    letter-spacing: 1px;
+
+}
+
+.header-background{
+    padding: 50px;
+    margin: 0;
+    background-color: #f8e2c6;
+}
+
+body{
+    margin: 0%;
+    background-color: #35848e;
+}
+
+img{
+    position: center;
+    width: 100%;
+    max-width: 30rem;
+    padding-top: 25px;
+    margin-left: 34.5em;
+    margin-right: 34.5em;
+}
