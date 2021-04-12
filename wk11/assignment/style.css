@@ -1,0 +1,22 @@
+h2{
+    font-size: 25px;
+}
+
+h1{
+    font-size: 40px;
+}
+
+body{
+    padding:1.5em;
+    background-color: #351c03;
+    color:rgb(255, 249, 228)
+}
+
+a{
+    color:rgb(253, 245, 214);
+
+}
+
+h3{
+    letter-spacing: 1.5px;
+}
