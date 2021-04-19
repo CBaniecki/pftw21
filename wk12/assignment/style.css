@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+    align-items: center;
+
+}
+
+h1, h3{
+    color:white;
+    text-align: center;
+    letter-spacing: 1px;
+    
+}
