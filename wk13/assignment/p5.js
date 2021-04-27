@@ -1,4 +1,14 @@
+//water drop array
 var drops= [];
+
+//timer to stop rain
+var time1 = 5200;
+var time2 = 5310;
+
+//flower
+let diameter;
+let angle = 0;
+var pos;
 
 function setup() {
     createCanvas(740,640);
@@ -6,13 +16,36 @@ function setup() {
         drops[i] = new Drop();
     }
 
+    diameter = height - 10;
+    stroke(0);
+    strokeWeight(2);
+    fill(0);
+
+
 }
 function draw() {
     background("#000080");
+    var currentTime = millis();
+
+    //timer which sets duration for water
+    if (currentTime < time1){
     for(var i = 0; i< drops.length; i++){
     drops[i].fall();
     drops[i].show();
     }
+    }
+
+    //flower
+    if(currentTime > time2){
+    let d1 = 10 + (sin(angle) * diameter) /6 + diameter/5;
+    let d2 = 10 + (sin(angle) * diameter) /7 + diameter/6;
+    
+    ellipse(150, height/2, d1, d1);
+    ellipse(width/5, height/3.5, d2, d2);
+
+    angle += 0.02;
+    }
+
 }
 
 function Drop() {
